@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="app-top-bar">
         <v-app-bar
             color="blue-grey darken-4"
             app
@@ -30,42 +30,35 @@
           <v-list nav dense>
           <v-list-item-group
             v-model="group"
-            active-class="blue-grey lighten-1"
+            active-class="blue-grey--text text--lighten-1"
           >
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Inicio</v-list-item-title>
-            </v-list-item>
+            <router-link to="/">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon>mdi-home</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Inicio</v-list-item-title>
+              </v-list-item>
+            </router-link>
 
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-auto-fix</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Grifinória</v-list-item-title>
-            </v-list-item>
+            <router-link to="/grifinoria">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon>mdi-auto-fix</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Grifinória</v-list-item-title>
+              </v-list-item>
+            </router-link>
 
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-auto-fix</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Sonserina</v-list-item-title>
-            </v-list-item>
+            <router-link to="/sonserina">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon>mdi-auto-fix</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Sonserina</v-list-item-title>
+              </v-list-item>
+            </router-link>
 
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-auto-fix</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Lufa-Lufa</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-auto-fix</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Corvinal</v-list-item-title>
-            </v-list-item>
 
           </v-list-item-group>
         </v-list>
@@ -82,3 +75,10 @@ export default {
     }),
 }
 </script>
+
+<style scoped>
+.app-top-bar a {
+  text-decoration: none;
+}
+
+</style>
