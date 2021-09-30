@@ -27,29 +27,48 @@
             absolute
             temporary
         >
-        <v-list
-            nav
-            dense
-        >
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
+          <v-list nav dense>
+          <v-list-item-group
+            v-model="group"
+            active-class="blue-grey lighten-1"
+          >
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Inicio</v-list-item-title>
+            </v-list-item>
 
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-auto-fix</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Grifinória</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-auto-fix</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Sonserina</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-auto-fix</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Lufa-Lufa</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-auto-fix</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Corvinal</v-list-item-title>
+            </v-list-item>
+
+          </v-list-item-group>
+        </v-list>
     </v-navigation-drawer>
   </div>
 </template>
